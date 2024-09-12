@@ -1,5 +1,6 @@
 // import { useState } from 'react'
 import { useEffect, useState } from 'react';
+import {motion}  from "framer-motion";
 
 import './App.css'
 
@@ -39,7 +40,20 @@ function App() {
 
   return (
     <>
+      <motion.div
+      
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        transition={{ duration: 1 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 }
+        }}
+
+      >
       <div className={`fixed right-5 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
+      </motion.div>
       <Home/>
       <Project/>
       <Contact/>
