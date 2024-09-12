@@ -12,7 +12,6 @@ import Contact from './views/Contact.tsx';
 
 function App() {
   const [activeSection, setActiveSection] = useState<string>('Home');
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
 
   const handleScroll = () => {
     const sections = ['Home', 'Project', 'Contact'];
@@ -36,21 +35,11 @@ function App() {
     };
   }, []);
 
-    useEffect(() => {
-      const handleResize = () => {
-        setWindowHeight(window.innerHeight);
-      };
 
-      window.addEventListener('resize', handleResize);
-
-      return () => {
-        window.removeEventListener('resize', handleResize);
-      };
-    }, []);
 
   return (
     <>
-      <div className={`fixed right-5 top-[${windowHeight/2}px]`}><Nav  activeSection={activeSection} /></div>
+      <div className={`fixed right-5 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
       <Home/>
       <Project/>
       <Contact/>

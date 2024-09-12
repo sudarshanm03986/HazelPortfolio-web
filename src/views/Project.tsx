@@ -3,7 +3,7 @@ import Screen from "../layouts/screen";
 const Project = () => {
     return ( <div id="Project"><Screen>
         
-        project 1
+       <h1>My works</h1>
         
     </Screen></div> );
 }

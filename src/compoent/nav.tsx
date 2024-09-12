@@ -15,13 +15,11 @@ let tabs = [
 ]
 
 const Nav = (props:any) => {
- 
 
-
-    console.log(props.activeSection)
-
-    return ( <div className="flex items-center justify-center flex-col gap-6 space-x-1 w-fit p-2 ">
-      {tabs.map((tab) => (
+    return ( <div className="flex items-center justify-center flex-col gap-3 space-x-1 w-fit p-2 ">
+      {tabs.map((tab, index) => (
+    <>
+      {index !== 0 && <div className="h-20 w-1 rounded-full bg-black "></div>}
         <a
           href={tab.id}
         //   onClick={() => setActiveTab(tab.id)}
@@ -42,6 +40,7 @@ const Nav = (props:any) => {
           )}
           {tab.label}
         </a>
+        </>
       ))}
     </div> );
 }
