@@ -1,5 +1,5 @@
 
-import { motion,  useScroll } from "framer-motion";
+import { motion }from "framer-motion";
 // import { useState } from "react";
 import { FaHome } from "react-icons/fa";
 import { RiContactsFill } from "react-icons/ri";
@@ -15,7 +15,7 @@ let tabs = [
 ]
 
 const Nav = (props:any) => {
-  const { scrollYProgress } = useScroll();
+  #const { scrollYProgress } = useScroll();
 
   return (
     <div className="flex items-center justify-center flex-col gap-3 space-x-1 w-fit p-2">
