@@ -40,20 +40,20 @@ function App() {
 
   return (
     <>
-      <motion.div
+      {/* <motion.div
       
         initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        transition={{ duration: 1 }}
+        animate="visible"
+        // viewport={{ once: true }}
+        transition={{ duration: 0.5, delay:0.25 }}
         variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 }
+          visible: {x:0},
+          hidden: { x:100 }
         }}
 
-      >
+      > */}
       <div className={`fixed right-5 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
-      </motion.div>
+      {/* </motion.div> */}
       <Home/>
       <Project/>
       <Contact/>

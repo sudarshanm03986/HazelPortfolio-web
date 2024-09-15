@@ -1,6 +1,6 @@
 
-import { motion }from "framer-motion";
-// import { useState } from "react";
+import { motion, useAnimate, useInView }from "framer-motion";
+import { useEffect } from "react";
 import { FaHome } from "react-icons/fa";
 import { RiContactsFill } from "react-icons/ri";
 import { MdWork } from "react-icons/md";
@@ -16,9 +16,40 @@ let tabs = [
 
 const Nav = (props:any) => {
   // const { scrollYProgress } = useScroll();
+  const [scope, animate] = useAnimate();
+  const isInView = useInView(scope);
+
+
+
+  const handleAnimate = async () => {
+    
+   
+
+  
+
+      // await animate(scope.current, {x: [100, 0]}, {type : "spring", duration:0.5, delay:0.25});
+    
+       animate('#Home', {initial: {x:150},animate: {x:0}}, {type : "spring", duration:0.25, delay:0.25});
+       animate('#Project', {x: [150 , 0]}, {type : "spring", duration:0.25, delay:0.5});
+
+      
+
+
+  }
+ 
+  useEffect(() => {
+
+
+    if (isInView) {
+
+      handleAnimate();
+    }
+
+
+   }, [isInView])
 
   return (
-    <div className="flex items-center justify-center flex-col gap-3 space-x-1 w-fit p-2">
+    <div ref={scope} className="flex items-center justify-center flex-col gap-3 space-x-1 w-fit p-2">
       {tabs.map((tab, index) => (
         <div key={tab.id} className="flex items-center flex-col group">
           {index !== 0 && (
@@ -26,6 +57,7 @@ const Nav = (props:any) => {
             
           )}
           <a
+            id={tab.name}
             href={tab.id}
             className={`${
               props.activeSection === tab.name
