@@ -1,10 +1,12 @@
 const Screen = (props:any) => {
     return ( 
-    <div className="w-[100%] h-[100vh] ">
-        
-      {props.children}
+      <section className="w-[100%] min-h-[100vh] h-fit flex justify-center">
+        <div className=" lg:w-[80%] min-h-[100vh] h-fit ">
+            
+          {props.children}
 
-    </div> );
+        </div>
+    </section> );
 }
  
 export default Screen;
