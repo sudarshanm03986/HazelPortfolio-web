@@ -9,7 +9,7 @@ import CV from "./../assets/react.svg"
 
 let links = [
     {icon: <FaLinkedin />, name:"Linkedin", message:"View my profile", type:"link" , link:"https://www.linkedin.com/in/hazel-anne-de-paz-20aa8a268/"},
-    {icon: <MdEmail/>, name:"Email", message:"Flick me a email", type:"email", link:"hazelannedepaz@yahoo.co.nz"},
+    {icon: <MdEmail/>, name:"Email", message:"Flick me an email", type:"email", link:"hazelannedepaz@yahoo.co.nz"},
     {icon: <FaFilePdf />, name:"PDF", message:"Check out my resume", type:"link", link:CV}
 ]
 
@@ -32,11 +32,11 @@ const Contact = () => {
             {links.map((link)=> (
 
                 <Appear>
-                    <a target="_blank" href={link.type === 'email' ? "mailto: " + link.link : link.link} className="bg-gray-300 p-2 rounded-lg h-16 flex items-center justify-between  w-full shadow-sm">
-                        <p className="text-3xl">{link.icon}</p>
+                    <a target="_blank" href={link.type === 'email' ? "mailto: " + link.link : link.link} className="hover:bg-black duration-500 bg-gray-300 group p-2 rounded-lg h-16 flex items-center justify-between  w-full shadow-sm">
+                        <p className="text-3xl group-hover:text-white duration-300">{link.icon}</p>
                         <div className="text-right">
-                        <p className="font-semibold">{link.message}</p>
-                        <p className="text-gray-800">{link.name}</p>
+                        <p className="font-semibold group-hover:text-white  duration-300">{link.message}</p>
+                        <p className="text-gray-600 group-hover:text-gray-300 duration-300">{link.name}</p>
                         </div>
 
 
@@ -49,7 +49,7 @@ const Contact = () => {
         </div>
         <div className="absolute bottom-5 ">
         <Appear>
-            <div className="flex justify-center items-center gap-2 text-lg bg-gray-300 py-1 px-2 rounded-lg">
+            <div className="flex justify-center items-center gap-2 text-lg bg-gray-300 py-1 px-2 rounded-lg shadow-sm">
             <MdEmail/>
                 <p>hazelannedepaz@yahoo.co.nz</p>
             </div>

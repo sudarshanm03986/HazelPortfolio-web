@@ -3,11 +3,13 @@ import { motion }from "framer-motion";
 import { FaHome } from "react-icons/fa";
 import { RiContactsFill } from "react-icons/ri";
 import { MdWork } from "react-icons/md";
+import { RiProfileLine } from "react-icons/ri";
 
 
 
 let tabs = [
     {id : "#Home", name :"Home", label: <FaHome/>},
+    {id : "#About", name :"About", label: <RiProfileLine/>},
     {id : "#Project", name:"Project", label: <MdWork/>},
     {id : "#Contact", name:"Contact", label: <RiContactsFill/>},
 

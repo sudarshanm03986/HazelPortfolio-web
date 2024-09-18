@@ -8,6 +8,7 @@ import Nav from './compoent/nav.tsx';
 import Home from './views/Home.tsx';
 import Project from './views/Project.tsx';
 import Contact from './views/Contact.tsx';
+import About from './views/About.tsx';
 
 
 
@@ -15,7 +16,7 @@ function App() {
   const [activeSection, setActiveSection] = useState<string>('Home');
 
   const handleScroll = () => {
-    const sections = ['Home', 'Project', 'Contact'];
+    const sections = ['Home','About', 'Project', 'Contact'];
     const scrollPos = window.scrollY + window.innerHeight / 2;
 
     for (const section of sections) {
@@ -55,6 +56,7 @@ function App() {
       <div className={`fixed right-5 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
       {/* </motion.div> */}
       <Home/>
+      <About/>
       <Project/>
       <Contact/>
     </>
