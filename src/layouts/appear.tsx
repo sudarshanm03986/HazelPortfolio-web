@@ -1,9 +1,13 @@
 import {motion, useAnimation, useInView} from "framer-motion";
 import { useEffect, useRef } from "react";
 
+interface Props {
+    children : JSX.Element,
+    width?: "fit-content" | "100%"
 
+}
 
-const Appear = (props:any) => {
+const Appear = ({children, width} : Props) => {
 
     //code
     const ref = useRef(null);
@@ -22,6 +26,7 @@ const Appear = (props:any) => {
 
     return (<div 
             ref={ref}
+            style={{position: "relative", width: width}}
             >
         <motion.div
             variants={{
@@ -35,7 +40,7 @@ const Appear = (props:any) => {
                 delay:0.25
             }}>
 
-            {props.children}
+            {children}
 
         </motion.div> 
     </div> );

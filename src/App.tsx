@@ -53,7 +53,7 @@ function App() {
         }}
 
       > */}
-      <div className={`fixed right-5 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
+      <div className={`fixed sm:right-5 right-1 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
       {/* </motion.div> */}
       <Home/>
       <About/>
