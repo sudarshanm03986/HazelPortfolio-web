@@ -1,6 +1,7 @@
 
 
-
+import p1l from './SlivereyeYouthCentreLow.jpeg'
+import p1 from './SlivereyeYouthCentreLow.jpeg'
 
 
 interface Project {
@@ -22,24 +23,24 @@ const project:Project[]  = [
     { 
         title: "Slivereye Youth Centre",
         descripttion: "Very noice",
-        src: 'src/data/SlivereyeYouthCentreLow.jpeg',
-        link: 'src/data/SlivereyeYouthCentre.png',
+        src: p1l,
+        link: p1,
         color: "#BBACAF"
 
     },
     { 
         title: "Slivereye Youth Centre",
         descripttion: "Very noice",
-        src: 'src/data/SlivereyeYouthCentreLow.jpeg',
-        link: 'src/data/SlivereyeYouthCentre.png',
+        src: p1l,
+        link: p1,
         color: "#FF1100"
 
     },
     { 
         title: "Slivereye Youth Centre",
         descripttion: "Very noice",
-        src: 'src/data/SlivereyeYouthCentreLow.jpeg',
-        link: 'src/data/SlivereyeYouthCentre.png',
+        src: p1l,
+        link: p1,
         color: "#101000"
 
     },

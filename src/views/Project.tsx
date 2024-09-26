@@ -4,9 +4,25 @@ import Screen from "../layouts/screen";
 
 import {project} from "../data/projectData";
 import Card from "../layouts/card";
+import { useEffect, useRef } from "react";
+import { useScroll } from "framer-motion";
 
 const Project = () => {
-    return ( <div id="Project">
+
+
+    const container = useRef(null);
+    const {scrollYProgress} = useScroll({
+        target:container,
+        offset: ['start start', 'end end']
+
+    })
+
+    useEffect(() => {
+        scrollYProgress.on("change", e => console.log(scrollYProgress))
+    },[])
+
+
+    return ( <div id="Project"> 
         
         <Screen>
         <div className="py-5">
@@ -22,13 +38,15 @@ const Project = () => {
                 
                     
                     <Appear>
-                    <div className="">
+                    <div ref={container} className="">
                         
-                        {project.map((data, index) => (
+                        {project.map((data, index) => {
+
+                            const scale = 1 - ((project.length - index)* 0.05);
                             
-                            <Card id={index} data={data}  />
+                           return <Card id={index} data={data} targetScale={scale} range={[index * (1/project.length) , 1]}  progress={scrollYProgress}/>
                             
-                        ) )}
+ }                       )}
 
                     </div>
                     </Appear>
