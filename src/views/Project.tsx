@@ -4,7 +4,7 @@ import Screen from "../layouts/screen";
 
 import {project} from "../data/projectData";
 import Card from "../layouts/card";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useScroll } from "framer-motion";
 
 const Project = () => {
@@ -16,11 +16,6 @@ const Project = () => {
         offset: ['start start', 'end end']
 
     })
-
-    useEffect(() => {
-        scrollYProgress.on("change", e => console.log(scrollYProgress))
-    },[])
-
 
     return ( <div id="Project"> 
         
