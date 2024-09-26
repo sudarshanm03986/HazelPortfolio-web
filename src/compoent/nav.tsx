@@ -32,7 +32,7 @@ const Nav = (props:any) => {
             initial="hidden"
             animate="visible"
             transition={{duration:0.5 , delay:0.25*(index - 0.5), type: "spring"}}
-            className=" sm:h-20 sm:w-1 h-10  w-[1px] rounded-full bg-gray-400 mb-2 "  />
+            className=" sm:h-20 sm:w-1 h-10  w-[3px] rounded-full bg-gray-400 mb-2 "  />
             
           )}
           <a
@@ -41,7 +41,7 @@ const Nav = (props:any) => {
               props.activeSection === tab.name
                 ? "text-black"
                 : "hover:text-black text-gray-400"
-            } relative rounded-full sm:p-3 p-2 font-medium duration-300 transition focus-visible:outline-2 sm:text-4xl `}
+            } relative rounded-full sm:p-3 p-2 font-medium duration-300 transition focus-visible:outline-2 sm:text-4xl text-xl `}
             style={{
               WebkitTapHighlightColor: "transparent",
             }}
@@ -51,7 +51,7 @@ const Nav = (props:any) => {
               <motion.span
               
                 layoutId="bubble"
-                className="absolute inset-0 z-10 sm:border-[3px]  border-[1px] rounded-full border-black mix-blend-difference"
+                className="absolute inset-0 z-10 sm:border-[3px]  border-[2.5px] rounded-full border-black mix-blend-difference"
                 transition={{ type: "spring", bounce: 0.1, duration: 0.8 }}
               />
             )}

@@ -25,7 +25,7 @@ const Project = () => {
                 
                     <div className="flex justify-center items-center h-[50vh]">
                     <Appear>
-                    <h1 className=" text-center text-[5rem]">My works</h1>
+                    <h1 className=" text-center sm:text-[3rem] text-[2rem]">Some of my work</h1>
                     </Appear>
                     </div>
          

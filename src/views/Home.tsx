@@ -27,7 +27,7 @@ const Home = () => {
                         transition={{duration:1, repeat:Infinity, ease:"easeInOut", bounce:0.5}}
                         >
                         <div className="flex flex-col items-center justify-center text-gray-400 gap-2">
-                        <p>Scroll down to see my work</p>
+                        <p className="sm:text-[1rem] text-sm">Scroll down to see my work</p>
                         <PiMouseScroll className="sm:text-3xl"/>
                         </div>
 
