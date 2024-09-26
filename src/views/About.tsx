@@ -4,6 +4,9 @@ import Screen from "../layouts/screen";
 import Pic from "./../assets/dp.jpeg";
 
 import AraPic from "./../assets/Ara-Landscape-Logo.png";
+import ApPic from "./../assets/AP Design_new_trans-bg.webp";
+
+
 
 
 const About = () => {
@@ -22,11 +25,11 @@ const About = () => {
                 </div>
             </Appear>
             
-
+            {/* EDUCATION */}
             <div className=" p-2  w-[500px] h-fit ">
                 <div className="flex items-center gap-2">
                 <Appear>
-                    <h1 className="font-semibold">Education</h1>
+                    <h1 className="font-semibold">Qualification</h1>
                 </Appear>
                 <Appear width="100%" >
                 <div className=" bg-black w-full h-1 rounded" ></div>
@@ -53,6 +56,42 @@ const About = () => {
                 
 
             </div>
+
+
+            {/* Experience */}
+
+            <div className=" p-2  w-[500px] h-fit ">
+                <div className="flex items-center gap-2">
+                    <Appear>
+                        <h1 className="font-semibold">Experience</h1>
+                    </Appear>
+                    <Appear width="100%" >
+                        <div className=" bg-black w-full h-1 rounded" ></div>
+                    </Appear>
+               
+                </div>
+
+                <Appear>
+                <div className=" bg-gradient-to-r from-blue-400 to-blue-950 rounded p-2 flex  justify-between shadow-sm h-16">
+                <div className="flex flex-col justify-center gap-2">
+                <p className="text-white"><strong>AP Design</strong> - Architect & Architectural Design</p>
+                <p className="text-gray-700">2024</p>
+                </div>
+               
+
+                <div className="h-full flex items-center">
+                <img src={ApPic} className=" h-[90%]" />
+                
+                </div>
+               
+
+                </div>
+                </Appear>
+
+            </div>
+
+
+
         </div>
 
         </Screen>
