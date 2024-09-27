@@ -20,20 +20,20 @@ const Project = () => {
     return ( <div id="Project"> 
         
         <Screen>
-        <div className="py-5">
+        <div className="py-5 animation">
             <div className="w-full">
                 
-                    <div className="flex justify-center items-center h-[50vh]">
-                    <Appear>
+                    {/* <div className="flex justify-center items-center h-[50vh]">
+                   
                     <h1 className=" text-center sm:text-[3rem] text-[2rem]">Some of my work</h1>
-                    </Appear>
-                    </div>
+                   
+                    </div> */}
          
 
                 
                     
               
-                    <div ref={container} className="animation">
+                    <div ref={container} className="relative">
                         
                         {project.map((data, index) => {
 
