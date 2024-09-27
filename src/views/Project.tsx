@@ -1,4 +1,4 @@
-import Appear from "../layouts/appear";
+// import Appear from "../layouts/appear";
 import Screen from "../layouts/screen";
 
 
