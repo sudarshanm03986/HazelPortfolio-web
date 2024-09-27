@@ -32,8 +32,8 @@ const Project = () => {
 
                 
                     
-                    <Appear>
-                    <div ref={container} className="">
+              
+                    <div ref={container} className="animation">
                         
                         {project.map((data, index) => {
 
@@ -44,7 +44,7 @@ const Project = () => {
  }                       )}
 
                     </div>
-                    </Appear>
+                    
                    
 
               
