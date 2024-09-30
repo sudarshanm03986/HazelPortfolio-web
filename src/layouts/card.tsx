@@ -28,11 +28,11 @@ const Card = ({id, data, targetScale, progress, range}: Props) => {
 
     const scale = useTransform(progress, range, [1, targetScale])
     return ( 
-    <div className="h-[100vh] flex items-center justify-center sticky top-10" >
+    <div className="h-[100vh] flex items-center justify-center sticky top-0" >
     
         <motion.div  
-            className={" h-[700px] w-full rounded-2xl p-5 sm:p-10 relative shadow-xl"} 
-            style={{ scale, backgroundColor: data.color, top:`calc(-10% + ${id * 50}px)`}}>
+        className={" h-[700px] w-full rounded-2xl p-5 sm:p-10 relative shadow-2xl"} 
+            style={{ scale, backgroundColor: data.color,top:`calc(-10% + ${id * 35}px)`}}>
             
          
 
@@ -46,7 +46,7 @@ const Card = ({id, data, targetScale, progress, range}: Props) => {
                 </div>
 
                 <div className="sm:w-[90%] sm:h-full h-[40%] overflow-hidden rounded-2xl">
-                    <img src={data.src} className="" />
+                    <img src={data.src} className="w-full h-full object-cover object-left-top" />
                 </div>
 
 

@@ -39,7 +39,7 @@ const Project = () => {
 
                             const scale = 1 - ((project.length - index)* 0.05);
                             
-                           return <Card id={index} data={data} targetScale={scale} range={[index * (1/project.length) , 1]}  progress={scrollYProgress}/>
+                           return <Card id={index} data={data} targetScale={scale} range={[(index) * (1/project.length) , 1]}  progress={scrollYProgress}/>
                             
  }                       )}
 
