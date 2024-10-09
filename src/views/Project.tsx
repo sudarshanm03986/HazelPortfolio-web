@@ -4,24 +4,32 @@ import Screen from "../layouts/screen";
 
 import {project} from "../data/projectData";
 import Card from "../layouts/card";
-import { useRef } from "react";
-import { useScroll } from "framer-motion";
+import { useRef, useState } from "react";
+// import { useScroll } from "framer-motion";
+
+
+interface ProjectObject {
+
+    title : string
+    description: string
+    src: string
+    link: string
+    color: string
+
+}
 
 const Project = () => {
 
+    const [Data, setData] = useState<ProjectObject[]>(project);
+
 
     const container = useRef(null);
-    const {scrollYProgress} = useScroll({
-        target:container,
-        offset: ['start start', 'end end']
-
-    })
 
     return ( <div id="Project"> 
         
         <Screen>
         <div className="py-5 animation">
-            <div className="w-full">
+            <div className="w-full flex justify-center">
                 
                     {/* <div className="flex justify-center items-center h-[50vh]">
                    
@@ -33,13 +41,12 @@ const Project = () => {
                 
                     
               
-                    <div ref={container} className="relative">
+                    <div ref={container} className=" grid place-items-center ">
                         
-                        {project.map((data, index) => {
+                        {Data.map((data, index) => {
 
-                            const scale = 1 - ((project.length - index)* 0.05);
                             
-                           return <Card id={index} data={data} targetScale={scale} range={[(index) * (1/project.length) , 1]}  progress={scrollYProgress}/>
+                           return <Card id={index} data={data} allData={Data} setData={setData} />
                             
  }                       )}
 

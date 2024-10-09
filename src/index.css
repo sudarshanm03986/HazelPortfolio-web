@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   scroll-behavior: smooth;
-}
+} */
 
 body {
   background-color: #ffffff;
