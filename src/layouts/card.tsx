@@ -82,7 +82,7 @@ const Card = ({id, data, allData, setData, fullData, animation}: Props) => {
             onMouseDown={()=> {id === allData.length-1 && setAlignCard(true)}} 
             
             
-            className={" h-fit w-fit  cursor-grab active:cursor-grabbing active:scale-50  origin-bottom z-10"} 
+            className={" h-fit w-fit  cursor-grab active:cursor-grabbing  origin-bottom z-10"} 
             style={{
                 gridRow:1,
                 gridColumn:1,
@@ -111,7 +111,7 @@ const Card = ({id, data, allData, setData, fullData, animation}: Props) => {
                
                 <div  className='rounded-2xl sm:p-2 p-1 relative shadow-2xl'  style={{backgroundColor: data.color}}>
                 <div className=" max-h-[500px] w-fit max-w-[500px] overflow-hidden sm:rounded-lg rounded-xl">
-                    <img src={data.src} className=" object-scale-down  max-h-full object-left-top select-none pointer-events-none" />
+                    <img src={data.src} className=" object-scale-down  max-h-full object-left-top select-none pointer-events-none  grayscale-[100%]" />
                 </div>
                 </div>
 

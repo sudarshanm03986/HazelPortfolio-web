@@ -84,15 +84,15 @@ const Project = () => {
  }                       )}
 
                         <div className="absolute sm:bottom-10 bottom-0 flex flex-col items-center gap-2">
-                        <p className="text-gray-500 sm:text-[1rem] text-sm text-center">Drag the picture to side or press the arrow below for next project</p>
-                        <button onClick={handleNext} className=" sm:text-4xl text-xl text-gray-400 hover:text-black duration-300"><FaArrowCircleRight/></button>
+                        <p className="text-secondary sm:text-[1rem] text-sm text-center">Drag the picture to side or press the arrow below for next project</p>
+                        <button onClick={handleNext} className=" sm:text-4xl text-xl text-fadeGray hover:text-primary duration-300"><FaArrowCircleRight/></button>
                         </div>
                     </div>
             
                     <div className="w-full flex justify-center flex-col items-center">
                       <Appear>
                         <div>
-                        <motion.h1 className="sm:text-2xl text-xl"
+                        <motion.h1 className="sm:text-2xl text-xl text-primary"
 
                         variants={{
                             "hidden" : {y:"-100%", opacity: 0},
@@ -127,7 +127,7 @@ const Project = () => {
                         key={Data[Data.length -1].description }
                         
                         >{Data[Data.length -1].description }</motion.p>
-                        <motion.a className="underline text-gray-500 hover:text-black duration-300" href={Data[Data.length -1].link}
+                        <motion.a className="underline text-link hover:text-black duration-300" href={Data[Data.length -1].link}
                         variants={{
                             "hidden" : {y:"100%", opacity: 0},
                             "visible" : {y:"0" , opacity: 1},

@@ -39,7 +39,7 @@ const project:Project[]  = [
         description: "Crafted a detailed and modern design for a building, incorporating innovative architectural concepts and sustainable materials. The design balances aesthetics with functionality, focusing on maximizing space, natural lighting, and energy efficiency. Developed using cutting-edge tools, the project showcases creativity and attention to structural detail.",
         src: p1,
         link: p1l,
-        color: "#BBACAF"
+        color: "#919191"
 
     },
     { 
@@ -47,7 +47,7 @@ const project:Project[]  = [
         description: "Very noice",
         src: p2,
         link: p2l,
-        color: "#bbaca0"
+        color: "#919191"
 
     },
     { 
@@ -55,7 +55,7 @@ const project:Project[]  = [
         description: "Very noice",
         src: p3,
         link: p3l,
-        color: "#A99A9D "
+        color: "#919191"
 
     },
     { 
@@ -63,7 +63,7 @@ const project:Project[]  = [
         description: "Very noice",
         src: p4,
         link: p4l,
-        color: "#B5B1A8"
+        color: "#919191"
 
     },
     { 
@@ -71,7 +71,7 @@ const project:Project[]  = [
         description: "Very noice",
         src: p5,
         link: p5l,
-        color: "#C0B6B2"
+        color: "#919191"
 
     },
     { 
@@ -79,7 +79,7 @@ const project:Project[]  = [
         description: "Very noice",
         src: p6,
         link: p6l,
-        color: "#9F9095"
+        color: "#919191"
 
     },
 

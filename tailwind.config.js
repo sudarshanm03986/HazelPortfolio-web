@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: { 
+
       
       width:{
         xs: "480px",
@@ -14,7 +15,19 @@ export default {
         lg: "1024px",
         xl: "1280px",
         xxl: "1536px"
-    }},
+    },
+
+    colors: {
+      bg: "#E6E5DA",
+      primary : "#AB3130",
+      secondary: "#671917",
+      link: "#121212",
+      fadeGray: "#919191"
+    }
+
+  
+  
+  },
   },
   plugins: [],
 }
