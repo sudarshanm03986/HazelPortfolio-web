@@ -44,7 +44,7 @@ const Card = ({id, data, allData, setData, fullData, animation}: Props) => {
 
     const handleDragEnd = async() => {
 
-        if (Math.abs(x.get()) > 200) {
+        if (Math.abs(x.get()) > 130) {
             await animation(`#card${id}`, {y : "-80vh"});
 
 
