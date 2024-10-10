@@ -1,6 +1,6 @@
 
 
-import p1   from './SlivereyeYouthCentreLow.jpeg';
+import p1   from './SlivereyeYouthCentreLow.png';
 import p1l from './SlivereyeYouthCentre.png';
 
 import p2 from './LakeWhakataHHSM.png';

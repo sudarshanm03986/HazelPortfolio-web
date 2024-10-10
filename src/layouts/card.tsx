@@ -1,4 +1,4 @@
-import { SetStateAction, Dispatch } from 'react';
+import { SetStateAction, Dispatch, useState } from 'react';
 import {motion, useMotionValue, useTransform}from 'framer-motion';
 
 
@@ -27,13 +27,21 @@ const Card = ({id, data, allData, setData}: Props) => {
 
     const x = useMotionValue(0);
 
+    const [alignCard, setAlignCard] = useState(false);
+
+    const rotate = useTransform(()=>  {
+        const offset = alignCard ? 0 : id === 0 ? 8 : id % 2 ? id : -id;
+
+        return `${offset}deg`
+    })
+
     const opacity = useTransform(x, [-250, 0, 250], [0, 1, 0])
     
 
     const handleDragEnd = () => {
 
-        if (Math.abs(x.get()) > 50) {
-            setData(allData)
+        if (Math.abs(x.get()) > 250) {
+            setData((pv) => pv.filter((v) => v.title !== data.title))
 
         }
 
@@ -44,13 +52,17 @@ const Card = ({id, data, allData, setData}: Props) => {
     return ( 
 
     
-        <motion.div  
-            className={" h-[700px] w-[900px] rounded-2xl p-5 sm:p-10 relative shadow-2xl cursor-grab active:cursor-grabbing"} 
+        <motion.div 
+            onMouseDown={()=> {setAlignCard(true)}} 
+            
+            className={" h-fit w-fit rounded-2xl p-2 relative shadow-2xl cursor-grab active:cursor-grabbing active:scale-50"} 
             style={{backgroundColor: data.color,
                 gridRow:1,
                 gridColumn:1,
                 x,
-                opacity
+                opacity,
+                rotate,
+                transition: "0.125s transform"
             }}
             
             
@@ -68,21 +80,16 @@ const Card = ({id, data, allData, setData}: Props) => {
          
 
 
-            <div className="flex flex-col-reverse justify-end sm:flex-row w-full h-full gap-5">
 
-                <div className='flex flex-col sm:items-center justify-center sm:w-[30%]'>
-                <h1 className="text-center sm:text-4xl  text-xl pb-6 ">{data.title}</h1>
-                        <p>{data.description}</p>
-                        <a className=' underline text-gray-200 hover:invert duration-300 p-2' href={data.link}>View More</a>
-                </div>
 
-                <div className="sm:w-[90%] sm:h-full h-[40%] overflow-hidden rounded-2xl">
-                    <img src={data.src} className="w-full h-full object-cover object-left-top  select-none pointer-events-none" />
+               
+
+                <div className="h-fit max-h-[500px] w-fit max-w-[500px] overflow-hidden rounded-2xl">
+                    <img src={data.src} className=" object-scale-down  max-h-full object-left-top select-none pointer-events-none" />
                 </div>
 
 
 
-            </div>
 
 
        
