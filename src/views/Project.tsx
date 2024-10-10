@@ -74,7 +74,7 @@ const Project = () => {
                 
                     
               
-                    <div ref={scope} className=" grid sm:h-full h-fit relative pb-28 place-items-center sm:p-5 w-full ">
+                    <div ref={scope} className=" grid sm:h-full h-fit relative pb-28 pt-2 place-items-center sm:p-5 w-full ">
                         
                         {Data.map((data, index) => {
 
