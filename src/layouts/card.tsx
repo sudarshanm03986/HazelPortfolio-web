@@ -34,7 +34,7 @@ const Card = ({id, data, allData, setData, fullData, animation}: Props) => {
     // const [scope, animate] = useAnimate();
 
     const rotate = useTransform(()=>  {
-        const offset = alignCard ? 0 : id === 0 ? 8 : id % 2 ? id : -id;
+        const offset = alignCard ? 0 : id === 0 ? -5 : id % 2 ? id : -id;
 
         return `${offset}deg`
     })

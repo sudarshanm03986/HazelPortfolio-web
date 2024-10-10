@@ -67,14 +67,14 @@ const Project = () => {
         
         <Screen>
         <div className="animation">
-            <div className="w-full flex flex-col sm:grid sm:grid-cols-2 justify-center gap-5 h-screen">
+            <div className="w-full flex flex-col sm:grid sm:grid-cols-2 sm:justify-center gap-5 h-screen">
                 
          
 
                 
                     
               
-                    <div ref={scope} className=" grid h-full relative place-items-center p-5 sm:w-full w-[300px] ">
+                    <div ref={scope} className=" grid sm:h-full h-fit relative pb-28 place-items-center sm:p-5 w-full ">
                         
                         {Data.map((data, index) => {
 
@@ -91,7 +91,7 @@ const Project = () => {
             
                     <div className="w-full flex justify-center flex-col items-center">
                       <Appear>
-                        <div>
+                        <div className="flex flex-col justify-center items-center">
                         <motion.h1 className="sm:text-2xl text-xl text-primary"
 
                         variants={{
@@ -111,6 +111,7 @@ const Project = () => {
                         
                         >{Data[Data.length -1].title }</motion.h1>
                         <motion.p  
+                        className="text-center"
                         variants={{
                             "hidden" : {x:"100%", opacity: 0},
                             "visible" : {x:"0" , opacity: 1},
