@@ -11,7 +11,7 @@ const Home = () => {
                 <div className="flex h-[100vh] w-full items-center justify-center flex-col">
                     <div>
                     <Appear>
-                    <h1 className="sm:text-[7rem] text-3xl leading-none uppercase text-primary">Hazel Anne de Paz</h1>
+                    <h1 className="sm:text-[7rem] text-3xl leading-none uppercase text-primary">Suda's</h1>
                     </Appear>
 
                     <Appear>

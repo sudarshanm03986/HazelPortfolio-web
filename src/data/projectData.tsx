@@ -1,22 +1,11 @@
 
 
-import p1   from './SlivereyeYouthCentreLow.png';
-import p1l from './SlivereyeYouthCentre.png';
+import p1   from './petitionsuda.vercel.app_petitions.png';
+import p2 from './fafs.vercel.app_.png';
+import p3 from './www.pixelpals.co.nz_.png'
+import p4 from './Screenshot 2025-09-03 at 10.44.56 PM.png'
 
-import p2 from './LakeWhakataHHSM.png';
-import p2l from './LakeWhakataHouse.pdf'
 
-import p3 from './21GloucesterStSM.png';
-import p3l from'./21GloucesterSt.pdf';
-
-import p4 from './7DalzielPlaceSM.png';
-import p4l from'./7DalzielPlace.pdf';
-
-import p5 from './112CashelStSM.png';
-import p5l from './112CashelSt.pdf';
-
-import p6 from './47FerryRoadSM.png';
-import p6l from './47FerryRoad.pdf';
 
 interface Project {
 
@@ -35,54 +24,39 @@ interface Project {
 const project:Project[]  = [
 
     { 
-        title: "Slivereye Youth Centre",
+        title: "Petition Full-stack Website",
         description: "Crafted a detailed and modern design for a building, incorporating innovative architectural concepts and sustainable materials. The design balances aesthetics with functionality, focusing on maximizing space, natural lighting, and energy efficiency. Developed using cutting-edge tools, the project showcases creativity and attention to structural detail.",
         src: p1,
-        link: p1l,
-        color: "#919191"
+        link: "https://petitionsuda.vercel.app/petitions?count=10&startIndex=0",
+        color: "#2c5281"
 
     },
+   
     { 
-        title: "Lake Whakata Holiday House",
-        description: "Very noice",
+        title: "Family & Friends Studio",
+        description: "Crafted a detailed and modern design for a building, incorporating innovative architectural concepts and sustainable materials. The design balances aesthetics with functionality, focusing on maximizing space, natural lighting, and energy efficiency. Developed using cutting-edge tools, the project showcases creativity and attention to structural detail.",
         src: p2,
-        link: p2l,
+        link: "https://fafs.vercel.app/",
         color: "#919191"
 
     },
     { 
-        title: "21 Gloucester Street",
-        description: "Very noice",
+        title: "Pixel Pals",
+        description: "Crafted a detailed and modern design for a building, incorporating innovative architectural concepts and sustainable materials. The design balances aesthetics with functionality, focusing on maximizing space, natural lighting, and energy efficiency. Developed using cutting-edge tools, the project showcases creativity and attention to structural detail.",
         src: p3,
-        link: p3l,
-        color: "#919191"
+        link: "https://www.pixelpals.co.nz/",
+        color: "#facc14"
 
     },
+
     { 
-        title: "Industrial/Commercial Building",
-        description: "Very noice",
+        title: "Newah Guthi NZ",
+        description: "Crafted a detailed and modern design for a building, incorporating innovative architectural concepts and sustainable materials. The design balances aesthetics with functionality, focusing on maximizing space, natural lighting, and energy efficiency. Developed using cutting-edge tools, the project showcases creativity and attention to structural detail.",
         src: p4,
-        link: p4l,
-        color: "#919191"
+        link: "https://newar-web-frontend.vercel.app/",
+        color: "#321d16"
 
     },
-    { 
-        title: "Cashel Street Bulding",
-        description: "Very noice",
-        src: p5,
-        link: p5l,
-        color: "#919191"
-
-    },
-    { 
-        title: "DACD600 Construction Detailing",
-        description: "Very noice",
-        src: p6,
-        link: p6l,
-        color: "#919191"
-
-    },
-
 
 
 

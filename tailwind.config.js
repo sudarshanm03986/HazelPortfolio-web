@@ -18,9 +18,9 @@ export default {
     },
 
     colors: {
-      bg: "#E6E5DA",
-      primary : "#AB3130",
-      secondary: "#671917",
+      bg: "#e6e5dc",
+      primary : "#0398fc",
+      secondary: "#1a4570",
       link: "#121212",
       fadeGray: "#919191"
     }

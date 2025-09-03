@@ -3,8 +3,10 @@ import Screen from "../layouts/screen";
 
 import Pic from "./../assets/dp.jpeg";
 
-import AraPic from "./../assets/Ara-Landscape-Logo.png";
-import ApPic from "./../assets/AP Design_new_trans-bg.webp";
+// import AraPic from "./../assets/Ara-Landscape-Logo.png";
+// import ApPic from "./../assets/AP Design_new_trans-bg.webp";
+import DgPic from "./../assets/digital_simple_logo.jpeg"
+import UcPic from "./../assets/UCRed_RGB.png"
 
 
 
@@ -16,18 +18,18 @@ const About = () => {
         <div className="flex items-center flex-col justify-center h-screen gap-2">
 
             <Appear>
-                <img src={Pic}  className="rounded-full sm:w-40 grayscale-[100%]   w-32"/>
+                <img src={Pic}  className="rounded-full sm:w-40    w-32"/>
             </Appear>
             <Appear>
                 <div>
-                <h1 className="sm:text-2xl text-xl text-center p-3">Hi it's <strong className="text-primary">Hazel</strong></h1>
-                <p className="font-semibold sm:text-[1rem] text-sm">I am graduated in Architecture Technology</p>
+                <h1 className="sm:text-2xl text-xl text-center p-3">Hi it's <strong className="text-primary">Suda</strong></h1>
+                <p className="font-semibold sm:text-[1rem] text-sm">I am a Computer Science gradute.</p>
                 </div>
             </Appear>
             
             {/* EDUCATION */}
             <div className=" p-2  sm:w-[500px] w-full h-fit ">
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 h-fit">
                 <Appear>
                     <h1 className="font-semibold">Qualification</h1>
                 </Appear>
@@ -38,15 +40,15 @@ const About = () => {
                 </div>
                 
                 <Appear>
-                <div className=" bg-fadeGray rounded p-2 flex  justify-between shadow-sm h-16">
+                <div className=" bg-red-700 rounded p-2 flex  justify-between shadow-sm h-28">
                 <div className="flex flex-col justify-center sm:gap-2">
-                <p className="text-white  sm:text-[1rem] text-sm"><strong>Ara Intitute</strong> - Architecture Technology</p>
+                <p className="text-white  sm:text-[1rem] text-sm"><strong>University of Canterbury</strong> - BCs</p>
                 <p className="text-gray-200  sm:text-[1rem] text-sm ">2020 - 2024</p>
                 </div>
                
 
                 <div className="h-full flex items-center">
-                <img src={AraPic} className=" w-28 	grayscale-[100%]  brightness-0  invert" />
+                <img src={UcPic} className=" h-full	grayscale-[100%]  brightness-0  invert" />
                 
                 </div>
                
@@ -72,15 +74,15 @@ const About = () => {
                 </div>
 
                 <Appear>
-                <div className="  bg-fadeGray  rounded p-2 flex  justify-between shadow-sm h-16">
+                <div className="  bg-black  rounded p-2 flex  justify-between shadow-sm h-28">
                 <div className="flex flex-col justify-center sm:gap-2">
-                <p className="text-white sm:text-[1rem] text-sm"><strong>AP Design</strong> - Architect & Architectural Design</p>
-                <p className="text-gray-200 sm:text-[1rem] text-sm">2024</p>
+                <p className="text-white sm:text-[1rem] text-sm"><strong>Digital Simple ? </strong></p>
+                <p className="text-gray-200 sm:text-[1rem] text-sm">2025</p>
                 </div>
                
 
-                <div className="h-full flex items-center">
-                <img src={ApPic} className=" h-[90%]	grayscale-[100%]  brightness-0  invert " />
+                <div className="h-full flex items-end">
+                <img src={DgPic} className=" h-full 	" />
                 
                 </div>
                
