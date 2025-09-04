@@ -64,7 +64,7 @@ const project:Project[]  = [
     },
 
     { 
-        title: "Petition Full-stack Website",
+        title: "Petition",
         description: "Petition Web Application – Built a full-stack web app using TypeScript, React, SQL, Express, and Tailwind CSS. Developed backend functionality based on a provided skeleton and Postman test cases, achieving 94.56% (278/294 hidden tests passed). Designed the frontend from user stories, meeting interaction requirements and scoring 94.18%.",
         src: p1,
         link: "https://petitionsuda.vercel.app/petitions?count=10&startIndex=0",

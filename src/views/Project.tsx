@@ -67,11 +67,13 @@ const Project = () => {
         
         <Screen>
         <div className="animation">
-            <div className="w-full flex flex-col sm:grid sm:grid-cols-2 sm:justify-center gap-5 h-screen">
+            <div className="w-full flex flex-col sm:grid sm:grid-cols-2 sm:justify-center gap-5 h-screen relative">
                 
-         
-
-                
+                <div className="absolute w-full">
+                <Appear>
+                  <h1 className=" text-center text-primary p-10 text-4xl">Some of My Work</h1>
+                  </Appear>
+                  </div>
                     
               
                     <div ref={scope} className=" grid sm:h-full h-fit relative pb-28 pt-2 place-items-center sm:p-5 w-full ">
@@ -144,7 +146,7 @@ const Project = () => {
                         }}
                         key={"link"}
                         
-                        >link</motion.a>
+                        >View Project</motion.a>
                         </div>
                         </Appear>
 

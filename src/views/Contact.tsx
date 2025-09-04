@@ -32,7 +32,9 @@ const Contact = () => {
             {links.map((link)=> (
 
                 <Appear>
-                    <a target="_blank" href={link.type === 'email' ? "mailto:" + link.link : link.link} className="hover:bg-secondary duration-500 bg-fadeGray group p-2 rounded-lg sm:h-16 h-12 flex items-center justify-between  w-full shadow-sm">
+                    <a   target={link.link.includes("@") ? undefined : "_blank"}
+                        rel={link.link.includes("@") ? undefined : "noopener noreferrer"} 
+                        href={link.type === 'email' ?  `mailto:${link.link}`: link.link} className="hover:bg-secondary duration-500 bg-fadeGray group p-2 rounded-lg sm:h-16 h-12 flex items-center justify-between  w-full shadow-sm">
                         <p className="sm:text-3xl text-2xl text-white duration-300">{link.icon}</p>
                         <div className="text-right">
                         <p className="sm:text-[1rem] text-[0.8rem] font-semibold text-white  duration-300">{link.message}</p>

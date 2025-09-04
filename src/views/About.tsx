@@ -7,7 +7,7 @@ import Pic from "./../assets/dp.jpeg";
 // import ApPic from "./../assets/AP Design_new_trans-bg.webp";
 import DgPic from "./../assets/digital_simple_logo.jpeg"
 import UcPic from "./../assets/UCRed_RGB.png"
-
+import ThPic from "./../assets/THE-HUT-LOGO_JULY-2024_V2_SML (1).png"
 
 
 
@@ -22,8 +22,8 @@ const About = () => {
             </Appear>
             <Appear>
                 <div>
-                <h1 className="sm:text-2xl text-xl text-center p-3">Hi it's <strong className="text-primary">Suda</strong></h1>
-                <p className="font-semibold sm:text-[1rem] text-sm">I am a Computer Science gradute.</p>
+                <h1 className="sm:text-2xl text-xl text-center p-3">Hi, my name is <strong className="text-primary">Sudarshan</strong></h1>
+                <p className="font-semibold sm:text-[1rem] text-sm text-center">I am a Computer Science Graduate</p>
                 </div>
             </Appear>
             
@@ -72,6 +72,23 @@ const About = () => {
                     </Appear>
                
                 </div>
+                <div className=" flex flex-col gap-2">
+                <Appear>
+                <div className="  bg-blue-950 rounded p-2 flex  justify-between shadow-sm h-28">
+                <div className="flex flex-col justify-center sm:gap-2">
+                <p className="text-white sm:text-[1rem] text-sm"><strong>Genx Country (The Hut)</strong></p>
+                <p className="text-gray-200 sm:text-[1rem] text-sm">Contact Jun - Aug 2025</p>
+                </div>
+               
+
+                <div className="h-full flex items-end">
+                <img src={ThPic} className=" h-16	" />
+                
+                </div>
+               
+
+                </div>
+                </Appear>
 
                 <Appear>
                 <div className="  bg-black  rounded p-2 flex  justify-between shadow-sm h-28">
@@ -89,6 +106,7 @@ const About = () => {
 
                 </div>
                 </Appear>
+                </div>
 
             </div>
 
