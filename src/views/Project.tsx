@@ -128,7 +128,8 @@ const Project = () => {
                         key={Data[Data.length -1].description }
                         
                         >{Data[Data.length -1].description }</motion.p>
-                        <motion.a className="underline text-link hover:text-black duration-300" href={Data[Data.length -1].link}
+                        <motion.a className="underline text-link hover:text-black duration-300" href={ Data[Data.length -1].link}
+                        target="_blank"
                         variants={{
                             "hidden" : {y:"100%", opacity: 0},
                             "visible" : {y:"0" , opacity: 1},

@@ -8,8 +8,8 @@ import CV from "./../assets/react.svg"
 
 
 let links = [
-    {icon: <FaLinkedin />, name:"Linkedin", message:"View my profile", type:"link" , link:"https://www.linkedin.com/in/hazel-anne-de-paz-20aa8a268/"},
-    {icon: <MdEmail/>, name:"Email", message:"Flick me an email", type:"email", link:"hazelannedepaz@yahoo.co.nz"},
+    {icon: <FaLinkedin />, name:"Linkedin", message:"View my profile", type:"link" , link:"https://www.linkedin.com/in/sudarshan-malla-113278151/"},
+    {icon: <MdEmail/>, name:"Email", message:"Flick me an email", type:"email", link:"sudarshanm03986@gmail.com"},
     {icon: <FaFilePdf />, name:"PDF", message:"Check out my resume", type:"link", link:CV}
 ]
 
@@ -32,7 +32,7 @@ const Contact = () => {
             {links.map((link)=> (
 
                 <Appear>
-                    <a target="_blank" href={link.type === 'email' ? "mailto: " + link.link : link.link} className="hover:bg-secondary duration-500 bg-fadeGray group p-2 rounded-lg sm:h-16 h-12 flex items-center justify-between  w-full shadow-sm">
+                    <a target="_blank" href={link.type === 'email' ? "mailto:" + link.link : link.link} className="hover:bg-secondary duration-500 bg-fadeGray group p-2 rounded-lg sm:h-16 h-12 flex items-center justify-between  w-full shadow-sm">
                         <p className="sm:text-3xl text-2xl text-white duration-300">{link.icon}</p>
                         <div className="text-right">
                         <p className="sm:text-[1rem] text-[0.8rem] font-semibold text-white  duration-300">{link.message}</p>
@@ -51,7 +51,7 @@ const Contact = () => {
         <Appear>
             <div className="flex justify-center items-center gap-2 sm:text-lg text-sm bg-fadeGray text-white py-1 px-2 rounded-lg shadow-sm">
             <MdEmail/>
-                <p>hazelannedepaz@yahoo.co.nz</p>
+                <p>sudarshanm03986@gmail.com</p>
             </div>
         </Appear>
         </div>
