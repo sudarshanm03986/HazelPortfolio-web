@@ -4,7 +4,7 @@ import { FaLinkedin, FaFilePdf } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 
-import CV from "./../assets/react.svg"
+import CV from "./../assets/Main SUDA CV (4).pdf"
 
 
 let links = [
