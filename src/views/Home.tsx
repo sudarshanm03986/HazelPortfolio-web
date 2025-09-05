@@ -31,15 +31,21 @@ const Home = () => {
                     </div> */}
 
                     
-                        <div className="flex sm:flex-row flex-col gap-5 mt-5">
+                    <div className="flex sm:flex-row flex-col gap-5 mt-5">
+                    <Appear>
                     <a href="#Project" className="mt-5">
                     <button className=" text-secondary hover:text-primary duration-300">See My Work</button>
                     </a>
+                    </Appear>
+                   
 
+                    <Appear>
                     <a href="#About" className="mt-5">
                     <button className=" text-secondary hover:text-primary duration-300">About Me</button>
                     </a>
+                    </Appear>
                     </div>
+                    
                     
                     <div className="absolute bottom-10">
                     <Appear>

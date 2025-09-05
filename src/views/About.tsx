@@ -1,6 +1,9 @@
 import Appear from "../layouts/appear";
 import Screen from "../layouts/screen";
 
+import { FaInstagram } from "react-icons/fa";
+import { LuYoutube } from "react-icons/lu";
+
 import Pic from "./../assets/dp.jpeg";
 
 // import AraPic from "./../assets/Ara-Landscape-Logo.png";
@@ -12,17 +15,15 @@ import ThPic from "./../assets/THE-HUT-LOGO_JULY-2024_V2_SML (1).png"
 
 
 const About = () => {
-    return ( <div id="About">
+    return ( <div id="About" className="pt-10">
         <Screen>
 
         <div className="flex items-center flex-col justify-center h-screen gap-2">
-            <div className=" flex flex-row-reverse items-center ">
+            <div className=" grid grid-cols-3 gap-3 ">
+
+            <div className=" col-span-2">
             <Appear>
-                <img src={Pic}  className="rounded-full sm:w-64    w-64"/>
-            </Appear>
-        
-            <Appear>
-                <div className="w-[60%]">
+                <div className="flex flex-col gap-2 p-2">
                 <h1 className="sm:text-2xl text-xl text-left  text-primary">About me</h1>
                 <p className="font-semibold sm:text-[1rem] text-sm ">Hi, I’m Sudarshan Malla. I’m a Computer Science graduate from the University of Canterbury and a passionate web and app developer. I love creating clean, user-friendly designs that blend functionality with great user experience.<br/><br/>
 
@@ -33,9 +34,17 @@ const About = () => {
             </Appear>
 
             </div>
-            
+
+            <div className=" flex items-center justify-center row-span-2">
+            <Appear>
+                <img src={Pic}  className=" sm:w-64    w-64"/>
+            </Appear>
+            </div>
+
+
+
             {/* EDUCATION */}
-            <div className=" p-2  sm:w-[500px] w-full h-fit ">
+            <div className=" p-2 w-full h-fit col-span-2 ">
                 <div className="flex items-center gap-2 h-fit">
                 <Appear>
                     <h1 className="font-semibold">Qualification</h1>
@@ -62,14 +71,17 @@ const About = () => {
 
                 </div>
                 </Appear>
+
+
+                
                 
 
             </div>
 
 
-            {/* Experience */}
+        {/* Experience */}
 
-            <div className=" p-2  sm:w-[500px] w-full h-fit  ">
+            <div className=" p-2   w-full h-fit col-span-2 ">
                 <div className="flex items-center gap-2">
                     <Appear>
                         <h1 className="font-semibold">Experience</h1>
@@ -116,6 +128,26 @@ const About = () => {
                 </div>
 
             </div>
+
+
+            <div className="flex flex-col">
+                <h1 className="text-primary text-center text-xl">Check out the pics & vids!!</h1>
+            <div className="flex justify-center gap-4 ">
+
+                <a target="_blank" href="https://www.instagram.com/by_suda/" className="text-4xl text-fadeGray hover:text-primary duration-300 h-fit"><FaInstagram/></a>
+                <a target="_blank" href="https://www.youtube.com/@by_suda" className="text-4xl text-fadeGray hover:text-red-600 duration-300 h-fit"><LuYoutube/></a>
+                
+            </div>
+
+            </div>
+            
+
+            </div>
+            
+            
+
+
+            
 
 
 
