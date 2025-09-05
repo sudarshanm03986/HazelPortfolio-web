@@ -16,16 +16,23 @@ const About = () => {
         <Screen>
 
         <div className="flex items-center flex-col justify-center h-screen gap-2">
-
+            <div className=" flex flex-row-reverse items-center ">
             <Appear>
-                <img src={Pic}  className="rounded-full sm:w-40    w-32"/>
+                <img src={Pic}  className="rounded-full sm:w-64    w-64"/>
             </Appear>
+        
             <Appear>
-                <div>
-                <h1 className="sm:text-2xl text-xl text-center p-3">Hi, my name is <strong className="text-primary">Sudarshan</strong></h1>
-                <p className="font-semibold sm:text-[1rem] text-sm text-center">I am a Computer Science Graduate</p>
+                <div className="w-[60%]">
+                <h1 className="sm:text-2xl text-xl text-left  text-primary">About me</h1>
+                <p className="font-semibold sm:text-[1rem] text-sm ">Hi, I’m Sudarshan Malla. I’m a Computer Science graduate from the University of Canterbury and a passionate web and app developer. I love creating clean, user-friendly designs that blend functionality with great user experience.<br/><br/>
+
+                Over the years, I’ve worked on personal and community projects ranging from websites to mobile apps, using technologies like React, TypeScript, Tailwind, and React Native. I enjoy taking on challenges where I can combine creativity and problem-solving to bring ideas to life.
+                <br/><br/>
+                When I’m not coding, you’ll probably find me at the gym, cycling, running, taking photo or exploring the outdoors. I believe the best projects come from curiosity, teamwork, and a drive to keep learning.</p>
                 </div>
             </Appear>
+
+            </div>
             
             {/* EDUCATION */}
             <div className=" p-2  sm:w-[500px] w-full h-fit ">
