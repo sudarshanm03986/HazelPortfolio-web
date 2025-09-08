@@ -8,7 +8,7 @@ import Pic from "./../assets/dp.jpeg";
 
 // import AraPic from "./../assets/Ara-Landscape-Logo.png";
 // import ApPic from "./../assets/AP Design_new_trans-bg.webp";
-import DgPic from "./../assets/digital_simple_logo.jpeg"
+// import DgPic from "./../assets/digital_simple_logo.jpeg"
 import UcPic from "./../assets/UCRed_RGB.png"
 import ThPic from "./../assets/THE-HUT-LOGO_JULY-2024_V2_SML (1).png"
 
@@ -109,7 +109,7 @@ const About = () => {
                 </div>
                 </Appear>
 
-                <Appear>
+                {/* <Appear>
                 <div className="  bg-black  rounded p-2 flex  justify-between shadow-sm h-28">
                 <div className="flex flex-col justify-center sm:gap-2">
                 <p className="text-white sm:text-[1rem] text-sm"><strong>Digital Simple ? </strong></p>
@@ -124,7 +124,7 @@ const About = () => {
                
 
                 </div>
-                </Appear>
+                </Appear> */}
                 </div>
 
             </div>
