@@ -95,7 +95,7 @@ const About = () => {
                 <Appear>
                 <div className="  bg-blue-950 rounded p-2 flex  justify-between shadow-sm h-28">
                 <div className="flex flex-col justify-center sm:gap-2">
-                <p className="text-white sm:text-[1rem] text-sm"><strong>Genx Country (The Hut)</strong></p>
+                <p className="text-white sm:text-[1rem] text-sm"><strong>Genx Country</strong> - Web Developer</p>
                 <p className="text-gray-200 sm:text-[1rem] text-sm">Contact Jun - Aug 2025</p>
                 </div>
                

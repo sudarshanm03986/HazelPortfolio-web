@@ -18,27 +18,21 @@ const Home = () => {
             <Appear>
                 <div>
                 <h1 className="sm:text-5xl text-5xl text-center p-3">Hi, my name is <strong className="text-primary">SUDA</strong></h1>
-                <p className="font-semibold sm:text-[1rem] text-sm text-center">I'm a Full-Stack Developer</p>
-                
-                <BlockInTextCard 
+                <p className="font-semibold sm:text-[1rem] text-sm text-center"><BlockInTextCard 
 
-                    tag="/ Support"
-                    text={
-                        <>
-                        <strong>Have Questions?</strong>
-                        Hello
-                        </>
-                    }
+                 
+                   
 
                     example={[
 
-                    "I am a Web Developer",
-                    "I am a Full-Stack Developer",
+                    "I'm a Web Developer",
+                    "I'm a Full-Stack Developer",
                     "I love coding",
-                    "I build web applications",
-                    "I create beautiful user interfaces",]}
+                    "I build web applications"]}
 
-                />
+                /></p>
+                
+                
                 </div>
             </Appear>
                     {/* <div>
