@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import { useEffect, useState } from 'react';
-// import {motion}  from "framer-motion";
+import {motion}  from "framer-motion";
 
 import './App.css'
 
@@ -37,6 +37,13 @@ function App() {
     };
   }, []);
 
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+
+   window.addEventListener("mousemove", (e) => {
+     setMousePosition({ x: e.clientX, y: e.clientY });
+   });
+
 
 
   return (
@@ -53,6 +60,22 @@ function App() {
         }}
 
       > */}
+
+      {/* Example: Render 10 divs */}
+      {[...Array(15)].map((_, i) => (
+
+          <motion.div
+        className="fixed pointer-events-none z-50"
+       
+        animate={{ x: mousePosition.x - 12, y: mousePosition.y - 12 }}
+        transition={{ type: "spring", stiffness: 400, damping: 30 + i * 2 }} // Increase delay for each subsequent div
+      >
+        <div className='bg-primary opacity-20' style={{height : (200 -  (i*5)) /10, width :  (200 -  (i*5)) /10,  borderRadius: "50%" }}></div>
+      </motion.div>
+      
+      ))}
+
+    
       <div className={`fixed sm:right-5 right-1 top-[20vh]`}><Nav  activeSection={activeSection} /></div>
       {/* </motion.div> */}
       <Home/>
