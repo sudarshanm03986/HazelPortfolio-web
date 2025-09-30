@@ -1,6 +1,6 @@
 // import { useState } from 'react'
 import { useEffect, useState } from 'react';
-import {motion}  from "framer-motion";
+// import {motion}  from "framer-motion";
 
 import './App.css'
 
@@ -37,12 +37,12 @@ function App() {
     };
   }, []);
 
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  // const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
 
-   window.addEventListener("mousemove", (e) => {
-     setMousePosition({ x: e.clientX, y: e.clientY });
-   });
+  //  window.addEventListener("mousemove", (e) => {
+  //    setMousePosition({ x: e.clientX, y: e.clientY });
+  //  });
 
 
 
@@ -62,7 +62,7 @@ function App() {
       > */}
 
       {/* Example: Render 10 divs */}
-      {[...Array(15)].map((_, i) => (
+      {/* {[...Array(15)].map((_, i) => (
 
           <motion.div
         className="fixed pointer-events-none z-50"
@@ -73,7 +73,7 @@ function App() {
         <div className='bg-primary opacity-20' style={{height : (200 -  (i*5)) /10, width :  (200 -  (i*5)) /10,  borderRadius: "50%" }}></div>
       </motion.div>
       
-      ))}
+      ))} */}
 
     
       <div className={`fixed sm:right-5 right-1 top-[20vh]`}><Nav  activeSection={activeSection} /></div>

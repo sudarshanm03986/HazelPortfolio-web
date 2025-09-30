@@ -134,7 +134,7 @@ const About = () => {
                 <h1 className="text-primary text-center text-xl">Check out the pics & vids!!</h1>
             <div className="flex justify-center gap-4 ">
 
-                <a target="_blank" href="https://www.instagram.com/by_suda/" className="text-4xl text-fadeGray hover:text-primary duration-300 h-fit"><FaInstagram/></a>
+                <a target="_blank" href="https://www.instagram.com/_by_suda_/" className="text-4xl text-fadeGray hover:text-primary duration-300 h-fit"><FaInstagram/></a>
                 <a target="_blank" href="https://www.youtube.com/@by_suda" className="text-4xl text-fadeGray hover:text-red-600 duration-300 h-fit"><LuYoutube/></a>
                 
             </div>
