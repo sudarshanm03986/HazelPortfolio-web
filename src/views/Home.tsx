@@ -17,7 +17,7 @@ const Home = () => {
     
             <Appear>
                 <div>
-                <h1 className="sm:text-5xl text-5xl text-center p-3">Hi, my name is <strong className="text-primary">SUDA</strong></h1>
+                <h1 className="sm:text-5xl text-3xl text-center p-3">Hi, my name is <strong className="text-primary">SUDA</strong></h1>
                 <p className="font-semibold sm:text-[1rem] text-sm text-center"><BlockInTextCard 
 
                  
@@ -46,7 +46,7 @@ const Home = () => {
                     </div> */}
 
                     
-                    <div className="flex sm:flex-row flex-col gap-5 mt-5">
+                    <div className="flex sm:flex-row items-center flex-col gap-5 mt-5">
                     <Appear>
                     <a href="#Project" className="mt-5">
                     <button className=" text-secondary hover:text-primary duration-300">See My Work</button>

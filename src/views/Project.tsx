@@ -69,14 +69,14 @@ const Project = () => {
         <div className="animation">
             <div className="w-full flex flex-col sm:grid sm:grid-cols-2 sm:justify-center gap-5 h-screen relative">
                 
-                <div className="absolute w-full">
+                <div className="absolute w-full h-screen">
                 <Appear>
-                  <h1 className=" text-center text-primary p-10 text-4xl">Some of My Work</h1>
+                  <h1 className=" text-center text-primary p-10 sm:text-4xl text-xl">Some of My Work</h1>
                   </Appear>
                   </div>
                     
               
-                    <div ref={scope} className=" grid sm:h-full h-fit relative pb-28 pt-2 place-items-center sm:p-5 w-full ">
+                    <div ref={scope} className=" grid sm:h-full h-fit relative pb-28 sm:pt-2 pt-28 place-items-center sm:p-5 w-full ">
                         
                         {Data.map((data, index) => {
 
@@ -86,7 +86,7 @@ const Project = () => {
  }                       )}
 
                         <div className="absolute sm:bottom-10 bottom-0 flex flex-col items-center gap-2">
-                        <p className="text-secondary sm:text-[1rem] text-sm text-center">Drag the picture to side or press the arrow below for next project</p>
+                        <p className="text-secondary sm:text-[1rem] sm:text-sm text-xs text-center">Drag the picture to side or press the arrow below for next project</p>
                         <button onClick={handleNext} className=" sm:text-4xl text-xl text-fadeGray hover:text-primary duration-300"><FaArrowCircleRight/></button>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ const Project = () => {
                     <div className="w-full flex justify-center flex-col items-center">
                       <Appear>
                         <div className="flex flex-col justify-center items-center">
-                        <motion.h1 className="sm:text-2xl text-xl text-primary"
+                        <motion.h1 className="sm:text-2xl text-lg text-primary"
 
                         variants={{
                             "hidden" : {y:"-100%", opacity: 0},
@@ -113,7 +113,7 @@ const Project = () => {
                         
                         >{Data[Data.length -1].title }</motion.h1>
                         <motion.p  
-                        className="text-center"
+                        className="text-center sm:text-[1rem] text-sm  max-w-md"
                         variants={{
                             "hidden" : {x:"100%", opacity: 0},
                             "visible" : {x:"0" , opacity: 1},
