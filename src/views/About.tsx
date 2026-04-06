@@ -11,7 +11,7 @@ import { LuYoutube } from "react-icons/lu";
 // import DgPic from "./../assets/digital_simple_logo.jpeg"
 import UcPic from "./../assets/UCRed_RGB.png"
 import ThPic from "./../assets/THE-HUT-LOGO_JULY-2024_V2_SML (1).png"
-import PPpic from "./../assets/PixelPalsLogo.png"
+import PPpic from "../assets/PixelPalsLogo.png"
 
 
 
